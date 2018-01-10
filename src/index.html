@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dan Wilt Coaching: Javascript Assessment Quiz</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            min-height: 100%;
+            background: radial-gradient(ellipse at center, #417ca6 0%,#2f658c 100%);
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            color: white;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 34px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        p + .dwc-action-button {
+            margin-top: 20px;
+        }
+
+        .dwc-site-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .dwc-header {
+            padding-top: 35px;
+        }
+        .dwc-logo {
+            text-transform: uppercase;
+            color: #275A82;
+            background-color: white;
+            font-size: 12px;
+            padding: 0 16px;
+            position: fixed;
+            top: 0;
+            left: 15px;
+            font-weight: 800;
+            height: 36px;
+            line-height: 36px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+        }
+        .dwc-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .dwc-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Passion One', cursive;
+            font-size: 44px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+            margin-bottom: 15px;
+        }
+
+        .dwc-title:before {
+            content: "";
+            width: 110px;
+            height: 133px;
+            display: block;
+            margin-bottom: 15px;
+            background: url('images/phone-tablet.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .dwc-action-button {
+            display: inline-block;
+            background-color: #50C72B;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+            min-width: 220px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .dwc-footer {
+            background-color: #212121;
+            padding: 15px;
+        }
+
+        .dwc-copyright {
+            text-align: center;
+            color: #D7D7D7;
+            font-size: 12px;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="dwc-site-container">
+        <header class="dwc-header">
+            <p class="dwc-logo">Dan Wilt Coaching</p>
+        </header>
+        <main class="dwc-main">
+            <div class="dwc-callout">
+                <header>
+                    <h1 class="dwc-title">Do You Have What It Takes To Develop Mobile Apps?</h1>
+                </header>
+                <p>Complete the assessment to get a FREE report with custom next steps you can take to successfully learn mobile app development.</p>
+                <a href="" class="dwc-action-button">Get Started</a>
+            </div>
+        </main>
+        <footer class="dwc-footer">
+            <p class="dwc-copyright">©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
+        </footer>
+    </div>
+</body>
+</html>
