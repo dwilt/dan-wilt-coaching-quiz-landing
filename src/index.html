@@ -28,8 +28,12 @@
             font-family: 'Lato', sans-serif;
         }
 
-        p + .dwc-action-button {
-            margin-top: 20px;
+        .visually-hidden {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            height: 1px; width: 1px;
+            margin: -1px; padding: 0; border: 0;
         }
 
         .dwc-site-container {
@@ -54,13 +58,16 @@
             line-height: 36px;
             font-family: 'Open Sans', sans-serif;
         }
+
         .dwc-main {
             flex: 1;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
             padding: 40px;
-            text-align: center;
+        }
+
+        .typeform-widget {
+            flex: 1;
         }
 
         .dwc-title {
@@ -83,20 +90,6 @@
             background-size: 100% 100%;
         }
 
-        .dwc-action-button {
-            display: inline-block;
-            background-color: #50C72B;
-            border-radius: 5px;
-            color: white;
-            text-transform: uppercase;
-            min-width: 220px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            font-size: 18px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            text-decoration: none;
-        }
         .dwc-footer {
             background-color: #212121;
             padding: 15px;
@@ -135,13 +128,9 @@
             <p class="dwc-logo">Dan Wilt Coaching</p>
         </header>
         <main class="dwc-main">
-            <div class="dwc-callout">
-                <header>
-                    <h1 class="dwc-title">Do You Have What It Takes To Develop Mobile Apps?</h1>
-                </header>
-                <p>Complete the assessment to get a FREE report with custom steps you can take to successfully learn mobile app development.</p>
-                <a href="https://danwilt.typeform.com/to/ef9kWE" class="dwc-action-button">Get Started</a>
-            </div>
+            <h1 class="visually-hidden">Javascript Assessment</h1>
+            <div class="typeform-widget" data-url="https://danwilt.typeform.com/to/ef9kWE" data-transparency="100" data-hide-headers="true" data-hide-footer="true"></div>
+            <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </main>
         <footer class="dwc-footer">
             <p class="dwc-copyright">©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
