@@ -17,7 +17,7 @@
         }
 
         body{
-            background-color: #212121;
+            background: radial-gradient(ellipse at center, #417ca6 0%,#2f658c 100%);
             margin: 0;
             line-height: 1;
             font-family: 'Open Sans', sans-serif;
@@ -42,20 +42,6 @@
             margin: -1px; padding: 0; border: 0;
         }
 
-        .dwc-site-container {
-            min-height: 100vh;
-            background: radial-gradient(ellipse at center, #417ca6 0%,#2f658c 100%);
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .dwc-main {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            padding: 40px;
-        }
     </style>
 
     <!-- Facebook Pixel Code -->
@@ -78,18 +64,16 @@
 
 </head>
 <body>
-    <div class="dwc-site-container">
-        <header class="visually-hidden">
-            <p>Dan Wilt Coaching</p>
-        </header>
-        <main class="dwc-main" role="main">
-            <h1 class="visually-hidden">Javascript Assessment</h1>
-            <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://danwilt.typeform.com/to/ef9kWE"></iframe>
-            <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
-        </main>
-        <footer class="visually-hidden">
-            <p>©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
-        </footer>
-    </div>
+    <header class="visually-hidden">
+        <p>Dan Wilt Coaching</p>
+    </header>
+    <main role="main">
+        <h1 class="visually-hidden">Javascript Assessment</h1>
+        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://danwilt.typeform.com/to/ef9kWE"></iframe>
+        <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+    </main>
+    <footer class="visually-hidden">
+        <p>©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
+    </footer>
 </body>
 </html>
