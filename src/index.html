@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
     <style>
+        html {
+            margin: 0; height: 100%; overflow: hidden;
+        }
+
         body{
             background-color: #212121;
             margin: 0;
@@ -27,6 +31,8 @@
             line-height: 34px;
             font-family: 'Lato', sans-serif;
         }
+
+        iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; }
 
         .visually-hidden {
             position: absolute;
@@ -44,6 +50,8 @@
             flex-direction: column;
         }
         .dwc-header {
+            position: absolute;
+            z-index: 2;
             display: flex;
             padding-left: 15px;
         }
@@ -66,31 +74,12 @@
             padding: 40px;
         }
 
-        .typeform-widget {
-            flex: 1;
-        }
-
-        .dwc-title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Passion One', cursive;
-            font-size: 44px;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-            margin-bottom: 15px;
-        }
-
-        .dwc-title:before {
-            content: "";
-            width: 110px;
-            height: 133px;
-            display: block;
-            margin-bottom: 15px;
-            background: url('images/phone-tablet.png') no-repeat;
-            background-size: 100% 100%;
-        }
-
         .dwc-footer {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            bottom: 0;
+            right: 0;
             background-color: #212121;
             padding: 15px;
         }
@@ -129,8 +118,8 @@
         </header>
         <main class="dwc-main">
             <h1 class="visually-hidden">Javascript Assessment</h1>
-            <div class="typeform-widget" data-url="https://danwilt.typeform.com/to/ef9kWE" data-transparency="100" data-hide-headers="true" data-hide-footer="true"></div>
-            <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://danwilt.typeform.com/to/ef9kWE"></iframe>
+            <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
         </main>
         <footer class="dwc-footer">
             <p class="dwc-copyright">©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
