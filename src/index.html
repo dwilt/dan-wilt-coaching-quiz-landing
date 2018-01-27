@@ -49,46 +49,12 @@
             display: flex;
             flex-direction: column;
         }
-        .dwc-header {
-            position: absolute;
-            z-index: 2;
-            display: flex;
-            padding-left: 15px;
-        }
-        .dwc-logo {
-            text-transform: uppercase;
-            color: #275A82;
-            background-color: white;
-            font-size: 12px;
-            padding: 0 16px;
-            font-weight: 800;
-            height: 36px;
-            line-height: 36px;
-            font-family: 'Open Sans', sans-serif;
-        }
 
         .dwc-main {
             flex: 1;
             display: flex;
             flex-direction: row;
             padding: 40px;
-        }
-
-        .dwc-footer {
-            position: absolute;
-            z-index: 2;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-color: #212121;
-            padding: 15px;
-        }
-
-        .dwc-copyright {
-            text-align: center;
-            color: #D7D7D7;
-            font-size: 12px;
-            font-family: 'Lato', sans-serif;
         }
     </style>
 
@@ -113,8 +79,8 @@
 </head>
 <body>
     <div class="dwc-site-container">
-        <header class="dwc-header">
-            <p class="dwc-logo">Dan Wilt Coaching</p>
+        <header class="visually-hidden">
+            <p>Dan Wilt Coaching</p>
         </header>
         <main class="dwc-main" role="main">
             <h1 class="visually-hidden">Javascript Assessment</h1>
@@ -122,7 +88,7 @@
             <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
         </main>
         <footer class="visually-hidden">
-            <p class="dwc-copyright">©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
+            <p>©2017 All Rights Reserved. Dan Wilt Coaching, LLC</p>
         </footer>
     </div>
 </body>
